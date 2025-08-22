@@ -11,6 +11,7 @@ from utils.lists_variables import teamname_mapping
 # Dataframe for past seasons
 """datas = fetch_data_from_api()
 df = pd.DataFrame(datas)"""
+
 df = pd.read_csv('df_without_missings.csv')
 df.replace(teamname_mapping, inplace=True)
 
